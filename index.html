@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en",
+lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -19,14 +20,15 @@
                 <downlaod></downlaod>
             </div>
             <div class="menu-items">
-                <a href="" class="active">Home</a>
+                <a href="#" class="active">Home</a>
 
-                <a href="">Projetos</a>
-                <a href="">Sobre</a>
-                <a href="">Contato</a>
+                <a href="#">Projetos</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
 
                 <div class="menu-btn">
-                    <div class="baixar"> <a href="/paste/Eden2.png" download="/paste/eden2.png">Baixar Curriculo</a>
+                    <div class="baixar"> <a href="/Portifoilio-publico/paste/Eden2.png"
+                            download="/paste/eden2.png">Baixar Curriculo</a>
                     </div>
 
 
@@ -36,56 +38,102 @@
         </div>
     </header>
     <section class="main-1">
+        <div class="alinha">
+        <svg class="gegga">
+            <defs>
+              <filter id="gegga">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+                <feColorMatrix
+                  in="blur"
+                  mode="matrix"
+                  values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10"
+                  result="inreGegga"
+                />
+                <feComposite in="SourceGraphic" in2="inreGegga" operator="atop" />
+              </filter>
+            </defs>
+          </svg>
+      <svg class="snurra" width="200" height="200" viewBox="0 0 200 200">
+            <defs>
+              <linearGradient id="linjärGradient">
+                <stop class="stopp1" offset="0" />
+                <stop class="stopp2" offset="1" />
+              </linearGradient>
+              <linearGradient
+                y2="160"
+                x2="160"
+                y1="40"
+                x1="40"
+                gradientUnits="userSpaceOnUse"
+                id="gradient"
+                xlink:href="#linjärGradient"
+              />
+            </defs>
+            <path
+              class="halvan"
+              d="m 164,100 c 0,-35.346224 -28.65378,-64 -64,-64 -35.346224,0 -64,28.653776 -64,64 0,35.34622 28.653776,64 64,64 35.34622,0 64,-26.21502 64,-64 0,-37.784981 -26.92058,-64 -64,-64 -37.079421,0 -65.267479,26.922736 -64,64 1.267479,37.07726 26.703171,65.05317 64,64 37.29683,-1.05317 64,-64 64,-64"
+            />
+            <circle class="strecken" cx="100" cy="100" r="64" />
+          </svg>
+      <svg class="skugga" width="200" height="200" viewBox="0 0 200 200">
+            <path
+              class="halvan"
+              d="m 164,100 c 0,-35.346224 -28.65378,-64 -64,-64 -35.346224,0 -64,28.653776 -64,64 0,35.34622 28.653776,64 64,64 35.34622,0 64,-26.21502 64,-64 0,-37.784981 -26.92058,-64 -64,-64 -37.079421,0 -65.267479,26.922736 -64,64 1.267479,37.07726 26.703171,65.05317 64,64 37.29683,-1.05317 64,-64 64,-64"
+            />
+            <circle class="strecken" cx="100" cy="100" r="64" />
+          </svg>
         <div class="center">
             <h1>Portifólio <br> Eden</h1><br><br>
         </div>
+    </div>
     </section>
     <section class="diferencial">
         <div class="center">
             <div class="diferencial-single">
                 <i class="fa-solid fa-video"></i>
                 <h3>Clone Neflix</h3>
-                <p>Clone Netflix em React para demosntração <a class="logo"
-                        href="https://kkk9-bf07f.web.app/">Acesse</a></p>
-                <img src="/Portifoilio-publico/imagens/netflix_clone2.png" height="400px width=" 400px" alt="netflix" srcset="">
+                <p>Clone Netflix em React  <a class="logo" href="https://kkk9-bf07f.web.app/">Acesse</a></p>
+                <img src="/Portifoilio-publico/imagens/netflix_clone2.png" alt="netflix" srcset="">
             </div>
-            <div class="diferencial-single">
+            <div class="diferencial-single a">
                 <i class="fa-brands fa-app-store"></i>
                 <h3>App Lembrete</h3>
-                <p>App feito em React Native <a
+                <p>App em React Native <a
                         href="https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40edenforeverrf/Lembrete2-slug-cf73ad21c162405c98c899ca41a5a2a5-signed.apk">Baixar</a>
                 </p>
-                <img src="/Portifoilio-publico/imagens/Capturar.PNG" height="400px" width="" alt="lembrete">
+                <img src="/Portifoilio-publico/imagens/Capturar.PNG" alt="lembrete">
             </div>
             <div class="diferencial-single">
                 <i class="fa-solid fa-cube"></i>
                 <h3>Game</h3>
                 <p>Jogo da velha <a href="https://edenmaisumdia.github.io/Jogo-da-Velha/">Acesse</a></p>
-                <img src="/Portifoilio-publico/imagens/velha.png" alt="Jogo-da-Velha" width="400px" height="300px" srcset="">
+                <img src="/Portifoilio-publico/imagens/velha.png" alt="Jogo-da-Velha" " srcset="">
             </div>
         </div>
     </section>
 
     <section>
-        <div class="sobre">
-            <div class="mim">
-                <h1>Sobre Mim:</h1>
-            </div>
-            <div class="centralizou">
-                <p>Olá, sou desenvolvedor de software!
-                    Posso ajudá-lo a criar um produto,
-                    recurso ou site. Veja um pouco do meu trabalho e
-                    experiência! Se você gosta do que vê e tem um projeto que
-                    precisa ser codificado, não hesite em me contatar.</p>
-            </div>
+        <div class=" sobre">
+                <div class="mim">
+                    <h1>Sobre Mim:</h1>
+                </div>
+                <div class="centralizou">
+                    <p>Olá, sou desenvolvedor de software!
+                        Posso ajudá-lo a criar um produto,
+                        recurso ou site. Veja um pouco do meu trabalho e
+                        experiência! Se você gosta do que vê e tem um projeto que
+                        precisa ser codificado, não hesite em me contatar.</p>
+                </div>
 
-        </div>
+            </div>
     </section>
 
     <section class="contato">
-        <div class="x"> <h1>Contate-me</h1></div>
+        <div class="x">
+            <h1>Contate-me</h1>
+        </div>
         <div class="celular"> Entre em contato pelo (11) 97075-0048</div>
-        <div class="butao" ><a href="https://wa.me/11970750048">Contate-me</a></div>
+        <div class="butao"><a href="https://wa.me/11970750048">Contate-me</a></div>
     </section>
 
 

@@ -7,9 +7,323 @@ lang="pt">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio Eden</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="func.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 20px 0;
+}
+
+body {
+    background-color: #222;
+}
+
+.center {
+    width: 100%;
+    max-width: 1480px;
+    padding: 0 2%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.space {
+    justify-content: space-between;
+}
+
+.logo h2 {
+    color: white;
+
+}
+
+.menu-btn {
+    display: inline-block;
+    color: white;
+    margin: 0 8px;
+
+}
+
+.menu-items a {
+    display: inline-block;
+    color: white;
+    margin: 14px;
+    text-decoration: none;
+}
+
+.menu-items a.active {
+    color: #f9004d;
+}
+
+.baixar {
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 17px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.baixar:hover {
+    background-color: #f81f01;
+}
+
+.alinha {
+    display: flex;
+}
+
+.menu-btn button {
+    border: 1px solid white;
+    padding: 10px 14px;
+    color: white;
+    background-color: transparent;
+    margin: 0 15px;
+    border-radius: 15px;
+    font-size: 17px;
+    cursor: pointer;
+
+}
+
+.menu-btn button:hover {
+    background-color: #f9004d;
+}
+
+.main-1 {
+    padding-bottom: 50px;
+    padding-left: 40px;
+    font-size: 90px;
+    background-image: linear-gradient(145deg, #f81f01, #ee076e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.diferencial-single {
+    display: inline-block;
+    margin: 30px;
+}
+
+.diferencial-single svg {
+    color: #f9004d;
+    font-size: 40px;
+
+
+}
+
+.diferencial-single h3 {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.diferencial-single p {
+    color: white;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.diferencial-single a {
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.diferencial-single a:hover {
+    background-color: #f81f01;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 8px;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+.centralizou p {
+    font-size: 18px;
+}
+
+.sobre {
+    display: flex;
+    height:300px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+    background-color: #333;
+    padding-left: 80px;
+}
+
+.load {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+}
+
+.load hr {
+    border: 0;
+    margin: 0;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    border-radius: 50%;
+    animation: spin 2s ease infinite;
+}
+
+.load :first-child {
+    background: #19a68c;
+
+}
+
+.mim {
+    position: relative;
+    right: 50px;
+    font-size: 24px;
+
+    color: #f81f01;
+}
+
+.diferencial-single img {
+    width: 480px;
+    height: 400px;
+
+}
+
+.a img {
+    height: 400px;
+    max-width: 300px;
+    width: auto;
+}
+
+
+
+.centralizou {
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    justify-content: center;
+    padding-left: 20px;
+    max-width: 500px;
+}
+
+.contato {
+
+
+    color: white;
+    height: 250px;
+
+}
+.diferencial-single p{
+    width: 340px;
+}
+.celular {
+    display: block;
+    font-size: 22px;
+    margin-left: 35%;
+    margin-top: -30px;
+}
+
+.x {
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 40%;
+    margin-top: 10px;
+    padding-bottom: 50px;
+}
+
+.butao a:hover {
+    background-color: #f81f01;
+
+}
+
+.butao a {
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 43%;
+    font-size: 25px;
+
+
+    text-decoration: none;
+
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+
+}
+
+.gegga {
+    width: 0;
+}
+
+.snurra {
+    filter: url(#gegga);
+}
+
+.stopp1 {
+    stop-color: #f81f01;
+}
+
+.stopp2 {
+    stop-color: #ee076e;
+}
+
+.halvan {
+    animation: Snurra1 10s infinite linear;
+    stroke-dasharray: 180 800;
+    fill: none;
+    stroke: url(#gradient);
+    stroke-width: 23;
+    stroke-linecap: round;
+}
+
+.strecken {
+    animation: Snurra1 3s infinite linear;
+    stroke-dasharray: 26 54;
+    fill: none;
+    stroke: url(#gradient);
+    stroke-width: 23;
+    stroke-linecap: round;
+}
+
+.skugga {
+    filter: blur(5px);
+    opacity: 0.3;
+    position: absolute;
+    transform: translate(3px, 3px);
+}
+
+@keyframes Snurra1 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: -403px;
+    }
+}
+
+@media only screen and (max-width: 600px) {}
+    </style>
 </head>
 
 <body>
